@@ -17,7 +17,7 @@
   -->
 
 <!-- Use alt for alt -->
-<keymap name="Mac Emacs+" parent="Emacs+" version="1" disable-mnemonics="true">
+<keymap name="Mac Emacs+ (mod)" parent="Mac OS X 10.5+" version="1" disable-mnemonics="true">
 
   <!-- Rebind Intellij commands with alt -->
 
