@@ -22,26 +22,32 @@
   <!-- Rebind Intellij commands with alt -->
 
   <action id="CodeCompletion">
+    <keyboard-shortcut first-keystroke="control SPACE"/>
     <keyboard-shortcut first-keystroke="alt SLASH"/>
   </action>
   <action id="SmartTypeCompletion">
+    <keyboard-shortcut first-keystroke="control shift SPACE"/>
     <keyboard-shortcut first-keystroke="shift control SPACE"/>
     <keyboard-shortcut first-keystroke="control alt SLASH"/>
   </action>
 
   <!-- Redefine here to remove conflicts with Sexp commands below -->
   <action id="EditorCodeBlockStart">
+    <keyboard-shortcut first-keystroke="meta alt OPEN_BRACKET"/>
     <keyboard-shortcut first-keystroke="control alt U"/>
     <!--<keyboard-shortcut first-keystroke="control alt F"/>-->
   </action>
   <action id="EditorCodeBlockEnd">
+    <keyboard-shortcut first-keystroke="meta alt CLOSE_BRACKET"/>
     <keyboard-shortcut first-keystroke="control alt D"/>
     <!--<keyboard-shortcut first-keystroke="control alt B"/>-->
   </action>
   <action id="EditorCodeBlockStartWithSelection">
+    <keyboard-shortcut first-keystroke="meta alt shift OPEN_BRACKET"/>
     <keyboard-shortcut first-keystroke="control shift alt U"/>
   </action>
   <action id="EditorCodeBlockEndWithSelection">
+    <keyboard-shortcut first-keystroke="meta alt shift CLOSE_BRACKET"/>
     <keyboard-shortcut first-keystroke="control shift alt D"/>
   </action>
 
@@ -71,15 +77,14 @@
   </action>
 
   <action id="EditorNextWord">
-    <!--<keyboard-shortcut first-keystroke="control RIGHT"/>-->
-    <!--<keyboard-shortcut first-keystroke="alt F"/>-->
     <!-- TODO: Temporary binding for forward sexp -->
+    <keyboard-shortcut first-keystroke="alt RIGHT"/>
+    <keyboard-shortcut first-keystroke="control alt F"/>
     <keyboard-shortcut first-keystroke="control alt F"/>
   </action>
   <action id="EditorPreviousWord">
-    <!--<keyboard-shortcut first-keystroke="control LEFT"/>-->
-    <!--<keyboard-shortcut first-keystroke="alt B"/>-->
     <!-- TODO: Temporary binding for backward sexp -->
+    <keyboard-shortcut first-keystroke="alt LEFT"/>
     <keyboard-shortcut first-keystroke="control alt B"/>
   </action>
 
@@ -111,6 +116,7 @@
   </action>
 
   <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="meta L"/>
     <keyboard-shortcut first-keystroke="alt G" second-keystroke="G"/>
     <keyboard-shortcut first-keystroke="alt G" second-keystroke="alt G"/>
   </action>
@@ -121,6 +127,10 @@
     <keyboard-shortcut first-keystroke="control X" second-keystroke="BACK_QUOTE"/>
   </action>
   <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="meta B"/>
+    <mouse-shortcut keystroke="meta button1"/>
+    <mouse-shortcut keystroke="Force touch" />
+    <mouse-shortcut keystroke="button2" />
     <keyboard-shortcut first-keystroke="alt PERIOD"/>
     <mouse-shortcut keystroke="ctrl button1"/>
   </action>
@@ -129,10 +139,12 @@
   </action>
 
   <action id="GotoAction">
+    <keyboard-shortcut first-keystroke="shift meta a" />
     <keyboard-shortcut first-keystroke="alt X"/>
   </action>
 
   <action id="EditorPageUp">
+    <keyboard-shortcut first-keystroke="page_up" />
     <keyboard-shortcut first-keystroke="alt V"/>
   </action>
   <action id="EditorTextStart">
@@ -145,14 +157,17 @@
   </action>
 
   <action id="MethodUp">
+    <keyboard-shortcut first-keystroke="ctrl shift UP"/>
     <keyboard-shortcut first-keystroke="alt UP"/>
     <keyboard-shortcut first-keystroke="control alt A"/>
   </action>
   <action id="MethodDown">
+    <keyboard-shortcut first-keystroke="ctrl shift DOWN"/>
     <keyboard-shortcut first-keystroke="alt UP"/>
     <keyboard-shortcut first-keystroke="control alt E"/>
   </action>
   <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="meta shift F"/>
     <keyboard-shortcut first-keystroke="alt S"/>
   </action>
   <action id="FindUsages">
@@ -166,6 +181,7 @@
 
   <!-- Edit actions rebound by Emacs+ -->
   <action id="EditorJoinLines">
+    <keyboard-shortcut first-keystroke="control shift J"/>
     <keyboard-shortcut first-keystroke="control U" second-keystroke="alt shift 6"/>
     <keyboard-shortcut first-keystroke="control U" second-keystroke="alt CIRCUMFLEX"/>
   </action>
