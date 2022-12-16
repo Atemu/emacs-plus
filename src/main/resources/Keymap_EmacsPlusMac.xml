@@ -306,6 +306,43 @@
     <keyboard-shortcut first-keystroke="alt GREATER"/>
   </action>
 
+  <!-- Debug actions rebound by Emacs+ -->
+  <action id="ToggleLineBreakpoint">
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="SPACE"/>
+
+    <keyboard-shortcut first-keystroke="control F8"/>
+  </action>
+  <action id="StepOver">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control N"/>
+
+    <keyboard-shortcut first-keystroke="F8"/>
+  </action>
+  <action id="StepInto">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control S"/>
+
+    <keyboard-shortcut first-keystroke="F7"/>
+  </action>
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control R"/>
+
+    <keyboard-shortcut first-keystroke="F9"/>
+  </action>
+  <action id="RunToCursor">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control U"/>
+
+    <keyboard-shortcut first-keystroke="alt F9"/>
+  </action>
+  <action id="ToggleTemporaryLineBreakpoint">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control T"/>
+
+    <keyboard-shortcut first-keystroke="control shift alt F8"/>
+  </action>
+  <action id="EvaluateExpression">
+    <keyboard-shortcut first-keystroke="control C" second-keystroke="control P"/>
+
+    <keyboard-shortcut first-keystroke="alt F8"/>
+  </action>
+
   <!-- Disable intellij conflicts -->
   <action id="EditorDuplicate">
     <!-- <keyboard-shortcut first-keystroke="alt D"/> -->
